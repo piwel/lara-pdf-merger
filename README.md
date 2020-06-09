@@ -36,6 +36,14 @@ You can optionally use the facade for shorter code. Add this to your facades:
 ```php
     'PdfMerger' => LynX39\LaraPdfMerger\Facades\PdfMerger::class,
 ```
+### Without Laravel:
+
+To use without Laravel, simply instanciate the PdfManage class and initialize it:
+```php
+$pdfMerger = new LynX39\LaraPdfMerger\PdfManage();
+$pdfMerger->init();
+```
+
 ## Usage
 
 ```php
